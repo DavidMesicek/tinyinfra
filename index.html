@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clear Brain Now</title>
+<title>TinyInfra</title>
 <style>
 html {
   background-image: url('./backround.png?v=2');
@@ -162,6 +162,67 @@ body::before {
   color: #999;
   font-size: 0.85em;
 }
+.divider {
+  margin: 50px 0;
+  border-top: 1px solid #444;
+  height: 1px;
+}
+.project-link {
+  color: #fa4;
+  text-decoration: none;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
+.proof-section {
+  margin-bottom: 50px;
+}
+.proof-section h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.proof-section p {
+  font-size: 1.05em;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.cwi-box {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 250px;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+.cwi-box a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95em;
+  line-height: 1.6;
+  display: block;
+  transition: color 0.3s ease;
+}
+.cwi-box a:hover {
+  color: #fa4;
+}
+@media (max-width: 1200px) {
+  .cwi-box {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 30px auto;
+    max-width: 100%;
+  }
+}
 footer {
   margin-top: 80px;
   padding-top: 30px;
@@ -174,55 +235,54 @@ footer {
 </head>
 <body>
 
+<div class="cwi-box">
+  <a href="https://cryptowithimpact.site/">TinyInfra is a CryptoWithImpact project.</a>
+</div>
+
 <section class="hero">
-  <h1>If your mind feels foggy lately,<br>this might explain why.</h1>
-  <p>It's not age.<br>And it's not a focus problem.</p>
+  <h1>TinyInfra</h1>
+  <p>Supporting real-world hardware projects.</p>
 </section>
 
 <section class="body-section">
-  <p>You forget small things.</p>
-  <p>You lose your train of thought.</p>
-  <p>You read something, but it doesn't stick.</p>
-  <p>Even after rest,<br>your mind still feels tired.</p>
-  <p>Most people assume it's memory.</p>
-  <p>That's not the real issue.</p>
+  <p>TinyInfra is a CryptoWithImpact execution unit focused on<br>funding physical tools built by real-world builders.</p>
 </section>
 
-<section class="aha-moment">
-  <p>The real problem is mental overload.</p>
-  <p>Your brain is constantly overstimulated<br>and never fully resets anymore.</p>
-  <p>That's why everything feels harder<br>than it used to.</p>
+<div class="divider"></div>
+
+<section class="body-section">
+  <h2>WHAT THIS PROJECT SUPPORTS</h2>
+  <p><strong>Current project</strong></p>
+  <p><strong>ESP32-CX-Tiny</strong><br>A compact, affordable hardware board for real-world applications.</p>
+  <p><a href="https://www.kickstarter.com/projects/c-h/the-esp32-cx-tiny" class="project-link">Live on Kickstarter</a>.</p>
 </section>
 
-<section class="bridge">
-  <p>I came across a simple audio-based method<br>that works in a very different way.</p>
-  <p>No learning.<br>No exercises.<br>You just listen.</p>
-  <p>It surprised me how subtle it felt.</p>
+<div class="divider"></div>
+
+<section class="body-section">
+  <h2>WHY IT MATTERS</h2>
+  <p>Small, practical tools often struggle to get visibility —<br>even when they solve real problems.</p>
+  <p>TinyInfra exists to support builders who ship physical tools,<br>not apps, platforms, or digital products.</p>
 </section>
 
-<section class="what-is-it">
-  <h2>So what is it, exactly?</h2>
-  <p>It's a short audio experience<br>designed to help your mind slow down<br>and reset from constant stimulation.</p>
-  <p>You don't need to believe anything.<br>You don't need to understand how it works.</p>
-  <p>You just listen.</p>
-  <p>Many people use it as part of their evening<br>or quiet focus routine.</p>
+<div class="divider"></div>
+
+<section class="proof-section">
+  <h2>PROOF</h2>
+  <p><strong>Status:</strong> Funding in progress</p>
+  <p><strong>Donation:</strong> Pending</p>
+  <p>Once completed, this page will publish:</p>
+  <ul style="color: #e0e0e0; line-height: 1.8;">
+    <li>on-chain transaction</li>
+    <li>Kickstarter receipt</li>
+    <li>timestamped proof</li>
+  </ul>
 </section>
-
-<div style="text-align: center; margin: 40px 0;">
-  <img src="1.png" alt="" style="max-width: 100%; height: auto;">
-</div>
-
-<div style="text-align: center;">
-  <section class="cta">
-    <a href="https://052fap-kymcqap3713tl7ez864.hop.clickbank.net" class="cta-button">See how it works</a>
-    <p class="cta-subtext">Takes less than 2 minutes</p>
-  </section>
-</div>
 
 <div class="visitor-counter" id="gc-visitors"></div>
 
 <footer>
-  <p>This page is not medical advice.<br>Individual experiences may vary.</p>
+  <p>TinyInfra — Supporting real-world hardware projects.</p>
 </footer>
 
 <script data-goatcounter="https://clearbrainnow.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
