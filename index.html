@@ -234,6 +234,24 @@ body::before {
   line-height: 1.8;
   margin-bottom: 10px;
 }
+.screenshot-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px 0;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #999;
+}
+.screenshot-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
 .product-box {
   position: fixed;
   left: 20px;
@@ -442,10 +460,14 @@ footer {
   <h2>PROOF</h2>
   <p><strong>Status:</strong> Funding in progress</p>
   <p><strong>Donation:</strong> Pending</p>
-  <p>Once completed, this page will publish:</p>
-  <ul style="color: #e0e0e0; line-height: 1.8;">
-    <li>Kickstarter receipt</li>
-  </ul>
+  <p><strong>Campaign funding status before donation was committed</strong></p>
+  <div class="screenshot-box">
+    <!-- Screenshot will be added here -->
+  </div>
+  <p><strong>Campaign funding status after donation was committed</strong></p>
+  <div class="screenshot-box">
+    <!-- Screenshot will be added here -->
+  </div>
 </section>
 
 <div class="visitor-counter" id="gc-visitors"></div>
