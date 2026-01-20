@@ -197,6 +197,40 @@ body::before {
   line-height: 1.8;
   margin-bottom: 10px;
 }
+.product-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+}
+.product-image-container {
+  flex-shrink: 0;
+}
+.product-image-container h3 {
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.product-image-container img {
+  max-width: 300px;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.product-content {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .product-box {
+    flex-direction: column;
+  }
+  .product-image-container img {
+    max-width: 100%;
+  }
+}
 .cwi-box {
   position: fixed;
   right: 20px;
@@ -262,8 +296,16 @@ footer {
 <section class="body-section">
   <h2>WHAT THIS PROJECT SUPPORTS</h2>
   <p><strong>Current project</strong></p>
-  <p><strong>ESP32-CX-Tiny</strong><br>A compact, affordable hardware board for real-world applications.</p>
-  <p><a href="https://www.kickstarter.com/projects/c-h/the-esp32-cx-tiny" class="project-link">Live on Kickstarter</a>.</p>
+  <div class="product-box">
+    <div class="product-image-container">
+      <h3>ESP32-CX-Tiny</h3>
+      <img src="product.png" alt="ESP32-CX-Tiny">
+    </div>
+    <div class="product-content">
+      <p>A compact, affordable hardware board for real-world applications.</p>
+      <p><a href="https://www.kickstarter.com/projects/c-h/the-esp32-cx-tiny" class="project-link">Live on Kickstarter</a>.</p>
+    </div>
+  </div>
 </section>
 
 <div class="divider"></div>
@@ -282,9 +324,7 @@ footer {
   <p><strong>Donation:</strong> Pending</p>
   <p>Once completed, this page will publish:</p>
   <ul style="color: #e0e0e0; line-height: 1.8;">
-    <li>on-chain transaction</li>
     <li>Kickstarter receipt</li>
-    <li>timestamped proof</li>
   </ul>
 </section>
 
