@@ -225,6 +225,16 @@ body::before {
   padding: 10px;
   background: rgba(255, 255, 255, 0.05);
   display: block;
+  transition: opacity 0.3s ease;
+}
+.product-box a:hover img {
+  opacity: 0.8;
+}
+.cwi-box a img {
+  transition: opacity 0.3s ease;
+}
+.cwi-box a:hover img {
+  opacity: 0.8;
 }
 @media (max-width: 1200px) {
   .product-box {
@@ -309,7 +319,7 @@ footer {
 <body>
 
 <div class="cwi-box">
-  <img src="CryptoWithImpact.png" alt="Crypto With Impact">
+  <a href="https://cryptowithimpact.site/"><img src="CryptoWithImpact.png" alt="Crypto With Impact"></a>
   <a href="https://cryptowithimpact.site/">TinyInfra is a Crypto With Impact project.</a>
   <div class="pump-section">
     <img src="Pump.png" alt="Pump">
@@ -319,7 +329,7 @@ footer {
 
 <div class="product-box">
   <h3>ESP32-CX-Tiny</h3>
-  <img src="product.png" alt="ESP32-CX-Tiny">
+  <a href="https://www.kickstarter.com/projects/c-h/the-esp32-cx-tiny"><img src="product.png" alt="ESP32-CX-Tiny"></a>
 </div>
 
 <section class="hero">
