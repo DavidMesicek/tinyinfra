@@ -249,6 +249,32 @@ body::before {
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
+.cwi-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+.cwi-box .pump-section {
+  margin-top: 20px;
+  text-align: center;
+}
+.cwi-box .pump-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.cwi-box .pump-link {
+  color: #fa4;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s ease;
+}
+.cwi-box .pump-link:hover {
+  color: #ffb84d;
+}
 .cwi-box a {
   color: #e0e0e0;
   text-decoration: none;
@@ -283,7 +309,12 @@ footer {
 <body>
 
 <div class="cwi-box">
+  <img src="CryptoWithImpact.png" alt="Crypto With Impact">
   <a href="https://cryptowithimpact.site/">TinyInfra is a Crypto With Impact project.</a>
+  <div class="pump-section">
+    <img src="Pump.png" alt="Pump">
+    <a href="#" class="pump-link">click here and trade</a>
+  </div>
 </div>
 
 <div class="product-box">
